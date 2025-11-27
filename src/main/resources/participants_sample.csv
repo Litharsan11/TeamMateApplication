@@ -1,0 +1,13 @@
+ID,Name,Email,PreferredGame,SkillLevel,PreferredRole,PersonalityScore,PersonalityType
+P001,Alice Johnson,alice@university.edu,Valorant,8,Strategist,95,Leader
+P002,Bob Smith,bob@university.edu,FIFA,7,Attacker,72,Balanced
+P003,Charlie Lee,charlie@university.edu,DOTA 2,6,Defender,88,Balanced
+P004,Diana Prince,diana@university.edu,CS:GO,9,Supporter,65,Thinker
+P005,Eve Adams,eve@university.edu,Basketball,7,Coordinator,78,Balanced
+P006,Frank Zhang,frank@university.edu,Valorant,8,Strategist,92,Leader
+P007,Grace Kim,grace@university.edu,FIFA,6,Attacker,58,Thinker
+P008,Henry Davis,henry@university.edu,Chess,7,Defender,81,Balanced
+P009,Iris Wilson,iris@university.edu,DOTA 2,8,Supporter,69,Thinker
+P010,Jack Brown,jack@university.edu,CS:GO,9,Coordinator,91,Leader
+P011,Kate Miller,kate@university.edu,Basketball,7,Strategist,74,Balanced
+P012,Leo Garcia,leo@university.edu,FIFA,8,Attacker,86,Balanced

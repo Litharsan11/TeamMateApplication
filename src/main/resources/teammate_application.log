@@ -1,0 +1,184 @@
+Nov 26, 2025 8:07:08 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 26, 2025 8:07:08 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 26, 2025 8:26:33 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 26, 2025 8:26:33 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 26, 2025 8:26:33 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 101 participants from allParticipants.csv
+Nov 26, 2025 8:26:33 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 101 participants
+Nov 26, 2025 8:27:29 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 3
+Nov 26, 2025 8:27:29 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Teams formed: 33 teams in 35ms
+Nov 26, 2025 10:36:27 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 26, 2025 10:36:27 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 26, 2025 10:36:32 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 26, 2025 10:36:32 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 26, 2025 10:36:32 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 103 participants from allParticipants.csv
+Nov 26, 2025 10:36:32 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 103 participants
+Nov 26, 2025 10:39:32 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 26, 2025 10:39:32 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 26, 2025 10:39:35 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 4
+Nov 26, 2025 10:39:35 PM com.teammate.TeamMateApplication manualParticipantEntry
+INFO: Manual participant entry mode - Current count: 0
+Nov 26, 2025 10:39:37 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: Adding new manual participant
+Nov 26, 2025 10:39:37 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 103 participants from allParticipants.csv
+Nov 26, 2025 10:40:06 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: New participant created: P1001 - WWW (Type: Leader, Score: 92)
+Nov 26, 2025 10:40:12 PM com.teammate.util.CSVFileHandler appendParticipantToAll
+INFO: Participant P1001 added to allParticipants.csv
+Nov 26, 2025 10:40:12 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: Participant P1001 saved to allParticipants.csv
+Nov 26, 2025 10:40:16 PM com.teammate.TeamMateApplication manualParticipantEntry
+INFO: Exiting manual participant entry mode
+Nov 26, 2025 10:40:18 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 26, 2025 10:40:18 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 26, 2025 10:40:18 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 103 participants from allParticipants.csv
+Nov 26, 2025 10:40:18 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 103 participants
+Nov 26, 2025 10:40:31 PM com.teammate.TeamMateApplication getValidatedTeamSize
+WARNING: Invalid team size entered: 2
+Nov 26, 2025 10:40:33 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 3
+Nov 26, 2025 10:40:33 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Teams formed: 34 teams in 43ms
+Nov 26, 2025 10:40:37 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Teams saved to formed_teams.csv
+Nov 26, 2025 10:40:41 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 4
+Nov 26, 2025 10:40:41 PM com.teammate.TeamMateApplication manualParticipantEntry
+INFO: Manual participant entry mode - Current count: 1
+Nov 26, 2025 10:40:42 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: Adding new manual participant
+Nov 26, 2025 10:40:42 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 103 participants from allParticipants.csv
+Nov 26, 2025 10:41:09 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: New participant created: P1001 - sad (Type: Balanced, Score: 80)
+Nov 26, 2025 10:41:19 PM com.teammate.util.CSVFileHandler appendParticipantToAll
+INFO: Participant P1001 added to allParticipants.csv
+Nov 26, 2025 10:41:19 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: Participant P1001 saved to allParticipants.csv
+Nov 26, 2025 10:41:23 PM com.teammate.TeamMateApplication viewManualParticipants
+INFO: Displayed 2 manual participants
+Nov 26, 2025 11:03:40 PM com.teammate.TeamMateApplication manualParticipantEntry
+INFO: Exiting manual participant entry mode
+Nov 26, 2025 11:03:44 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 26, 2025 11:03:44 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 26, 2025 11:03:44 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 103 participants from allParticipants.csv
+Nov 26, 2025 11:03:44 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 103 participants
+Nov 26, 2025 11:03:47 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 3
+Nov 26, 2025 11:03:47 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Teams formed: 34 teams in 7ms
+Nov 26, 2025 11:08:28 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 26, 2025 11:08:28 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 26, 2025 11:08:33 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 26, 2025 11:08:33 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 26, 2025 11:08:33 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 105 participants from allParticipants.csv
+Nov 26, 2025 11:08:33 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 105 participants
+Nov 26, 2025 11:09:02 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 3
+Nov 26, 2025 11:09:02 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Teams formed: 35 teams in 99ms
+Nov 26, 2025 11:10:36 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 26, 2025 11:10:36 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 26, 2025 11:10:39 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 26, 2025 11:10:39 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 26, 2025 11:10:39 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 105 participants from allParticipants.csv
+Nov 26, 2025 11:10:39 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 105 participants
+Nov 26, 2025 11:10:44 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 4
+Nov 26, 2025 11:10:44 PM com.teammate.TeamMateApplication loadAndFormTeams
+SEVERE: Team formation error: Team TEAM-25 has 4 leaders. Maximum allowed is 2.
+Nov 26, 2025 11:13:20 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 26, 2025 11:13:20 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 26, 2025 11:13:22 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 26, 2025 11:13:22 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 26, 2025 11:13:22 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 105 participants from allParticipants.csv
+Nov 26, 2025 11:13:22 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 105 participants
+Nov 26, 2025 11:13:31 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 10
+Nov 26, 2025 11:13:31 PM com.teammate.TeamMateApplication loadAndFormTeams
+SEVERE: Team formation error: Team TEAM-7 has 4 leaders. Maximum allowed is 2.
+Nov 27, 2025 12:49:42 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 27, 2025 12:49:42 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 27, 2025 12:49:45 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 27, 2025 12:49:45 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 27, 2025 12:49:45 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 105 participants from allParticipants.csv
+Nov 27, 2025 12:49:45 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 105 participants
+Nov 27, 2025 12:49:50 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 3
+Nov 27, 2025 12:49:50 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Teams formed: 35 teams in 36ms
+Nov 27, 2025 3:15:25 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 27, 2025 3:15:25 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 27, 2025 3:31:55 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 27, 2025 3:31:55 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 27, 2025 3:32:00 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 27, 2025 3:32:00 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 27, 2025 3:32:00 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 107 participants from allParticipants.csv
+Nov 27, 2025 3:32:00 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 107 participants
+Nov 27, 2025 3:32:07 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 27, 2025 3:32:07 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 27, 2025 3:49:33 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 6
+Nov 27, 2025 3:49:33 PM com.teammate.TeamMateApplication run
+INFO: User exited application
+Nov 27, 2025 3:49:33 PM com.teammate.TeamMateApplication cleanup
+INFO: Application shutdown complete
