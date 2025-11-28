@@ -529,6 +529,7 @@ public class TeamMateApplication {
         System.out.println("Total: " + manualParticipants.size());
         LOGGER.info("Displayed " + manualParticipants.size() + " manual participants");
     }
+
     /** Forms balanced teams using participants added manually during the session.
      *  Validates team size, displays results, handles errors, and allows CSV saving. */
 
