@@ -25,7 +25,7 @@ TEAM-8,Team 8,P047,Participant_47,user47@university.edu,DOTA 2,10,Attacker,78,Ba
 TEAM-8,Team 8,P063,Participant_63,user63@university.edu,Chess,8,Defender,60,Thinker
 TEAM-9,Team 9,P091,Participant_91,user91@university.edu,FIFA,10,Strategist,98,Leader
 TEAM-9,Team 9,P015,Participant_15,user15@university.edu,DOTA 2,8,Coordinator,66,Thinker
-TEAM-9,Team 9,P062,Participant_62,user62@university.edu,Basketball,6,Attacker,85,Balanced
+TEAM-9,Team 9,P1002,hjl,hjl@gmail.com,Chess,7,Defender,72,Balanced
 TEAM-10,Team 10,P094,Participant_94,user94@university.edu,CS:GO,2,Supporter,98,Leader
 TEAM-10,Team 10,P051,Participant_51,user51@university.edu,FIFA,2,Strategist,57,Thinker
 TEAM-10,Team 10,P032,Participant_32,user32@university.edu,DOTA 2,2,Attacker,86,Balanced
@@ -72,14 +72,14 @@ TEAM-24,Team 24,P058,Participant_58,user58@university.edu,Valorant,3,Defender,95
 TEAM-24,Team 24,P030,Participant_30,user30@university.edu,CS:GO,4,Coordinator,54,Thinker
 TEAM-24,Team 24,P059,Participant_59,user59@university.edu,DOTA 2,4,Supporter,79,Balanced
 TEAM-25,Team 25,P999,Test User,test@uni.edu,Valorant,8,Strategist,95,Leader
-TEAM-25,Team 25,P009,Participant_9,user9@university.edu,CS:GO,6,Supporter,62,Thinker
-TEAM-25,Team 25,P053,Participant_53,user53@university.edu,DOTA 2,7,Defender,71,Balanced
+TEAM-25,Team 25,P1003,ffew,mla@gmail.com,Chess,7,Defender,68,Thinker
+TEAM-25,Team 25,P999,Auto Test,auto@uni.edu,FIFA,7,Attacker,80,Balanced
 TEAM-26,Team 26,P007,Participant_7,user7@university.edu,DOTA 2,5,Attacker,93,Leader
 TEAM-26,Team 26,P069,Participant_69,user69@university.edu,CS:GO,5,Supporter,68,Thinker
 TEAM-26,Team 26,P090,Participant_90,user90@university.edu,Chess,5,Coordinator,62,Thinker
 TEAM-27,Team 27,P064,Participant_64,user64@university.edu,CS:GO,6,Supporter,92,Leader
 TEAM-27,Team 27,P027,Participant_27,user27@university.edu,Chess,6,Attacker,53,Thinker
-TEAM-27,Team 27,P048,Participant_48,user48@university.edu,Valorant,6,Defender,65,Thinker
+TEAM-27,Team 27,P053,Participant_53,user53@university.edu,DOTA 2,7,Defender,71,Balanced
 TEAM-28,Team 28,P067,Participant_67,user67@university.edu,Basketball,1,Attacker,92,Leader
 TEAM-28,Team 28,P068,Participant_68,user68@university.edu,Chess,1,Defender,80,Balanced
 TEAM-28,Team 28,P060,Participant_60,user60@university.edu,CS:GO,4,Coordinator,57,Thinker
@@ -87,20 +87,23 @@ TEAM-29,Team 29,P088,Participant_88,user88@university.edu,FIFA,4,Defender,92,Lea
 TEAM-29,Team 29,P087,Participant_87,user87@university.edu,Basketball,4,Attacker,51,Thinker
 TEAM-29,Team 29,P089,Participant_89,user89@university.edu,Chess,6,Supporter,75,Balanced
 TEAM-30,Team 30,P1001,WWW,WWW@Gmail.cp,FIFA,6,Defender,92,Leader
-TEAM-30,Team 30,P029,Participant_29,user29@university.edu,Basketball,5,Supporter,77,Balanced
-TEAM-30,Team 30,P1001,sad,dsdawda@gmaol.com,DOTA 2,5,Attacker,80,Balanced
+TEAM-30,Team 30,P009,Participant_9,user9@university.edu,CS:GO,6,Supporter,62,Thinker
+TEAM-30,Team 30,P062,Participant_62,user62@university.edu,Basketball,6,Attacker,85,Balanced
 TEAM-31,Team 31,P004,Participant_4,user4@university.edu,Basketball,4,Supporter,91,Leader
 TEAM-31,Team 31,P003,Participant_3,user3@university.edu,FIFA,4,Defender,66,Thinker
-TEAM-31,Team 31,P071,Participant_71,user71@university.edu,Chess,8,Strategist,70,Balanced
+TEAM-31,Team 31,P1001,sad,dsdawda@gmaol.com,DOTA 2,5,Attacker,80,Balanced
 TEAM-32,Team 32,P034,Participant_34,user34@university.edu,FIFA,7,Supporter,91,Leader
-TEAM-32,Team 32,P093,Participant_93,user93@university.edu,CS:GO,4,Defender,51,Thinker
-TEAM-32,Team 32,P080,Participant_80,user80@university.edu,Basketball,1,Coordinator,82,Balanced
+TEAM-32,Team 32,P048,Participant_48,user48@university.edu,Valorant,6,Defender,65,Thinker
+TEAM-32,Team 32,P071,Participant_71,user71@university.edu,Chess,8,Strategist,70,Balanced
 TEAM-33,Team 33,P076,Participant_76,user76@university.edu,FIFA,7,Strategist,91,Leader
-TEAM-33,Team 33,P078,Participant_78,user78@university.edu,FIFA,6,Defender,51,Thinker
-TEAM-33,Team 33,P055,Participant_55,user55@university.edu,Chess,8,Coordinator,90,Leader
+TEAM-33,Team 33,P093,Participant_93,user93@university.edu,CS:GO,4,Defender,51,Thinker
+TEAM-33,Team 33,P029,Participant_29,user29@university.edu,Basketball,5,Supporter,77,Balanced
 TEAM-34,Team 34,P016,Participant_16,user16@university.edu,CS:GO,6,Strategist,90,Leader
-TEAM-34,Team 34,P1000,Raag,Raag@gmail.com,FIFA,6,Attacker,80,Balanced
-TEAM-34,Team 34,P074,Participant_74,user74@university.edu,FIFA,3,Supporter,82,Balanced
+TEAM-34,Team 34,P078,Participant_78,user78@university.edu,FIFA,6,Defender,51,Thinker
+TEAM-34,Team 34,P080,Participant_80,user80@university.edu,Basketball,1,Coordinator,82,Balanced
 TEAM-35,Team 35,P028,Participant_28,user28@university.edu,CS:GO,8,Defender,90,Leader
-TEAM-35,Team 35,P999,Auto Test,auto@uni.edu,FIFA,7,Attacker,80,Balanced
-TEAM-35,Team 35,P002,Participant_2,user2@university.edu,FIFA,5,Attacker,80,Balanced
+TEAM-35,Team 35,P1002,lkl,lkl@gmail.com,FIFA,7,Attacker,80,Balanced
+TEAM-35,Team 35,P074,Participant_74,user74@university.edu,FIFA,3,Supporter,82,Balanced
+TEAM-36,Team 36,P055,Participant_55,user55@university.edu,Chess,8,Coordinator,90,Leader
+TEAM-36,Team 36,P1000,Raag,Raag@gmail.com,FIFA,6,Attacker,80,Balanced
+TEAM-36,Team 36,P002,Participant_2,user2@university.edu,FIFA,5,Attacker,80,Balanced
