@@ -1,3 +1,6 @@
+/** Custom exception for handling invalid or improperly formatted data inputs.
+ *  Stores the affected field name and invalid value for clearer error reporting. */
+
 package com.teammate.exception;
 
 public class DataValidationException extends Exception {
