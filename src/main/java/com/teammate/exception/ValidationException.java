@@ -1,3 +1,6 @@
+/** Used when input validation fails, providing details about the field and rule violated.
+ *  Helps identify invalid values and the specific validation constraint breached. */
+
 package com.teammate.exception;
 
 /**
