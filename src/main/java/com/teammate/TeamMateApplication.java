@@ -25,6 +25,7 @@ public class TeamMateApplication {
     private final Scanner scanner;
     private final TeamBuilder teamBuilder;
     private final List<Participant> manualParticipants;
+    private String userRole; // "MANAGEMENT" or "PARTICIPANT"
 
     private static final String[] SURVEY_QUESTIONS = {
             "I enjoy taking the lead and guiding others during group activities.",
@@ -88,13 +89,27 @@ public class TeamMateApplication {
 
     public void run() {
         printWelcomeBanner();
-        LOGGER.info("Application main menu loaded");
+
+        // User role verification
+        if (!verifyUserRole()) {
+            System.out.println("\nExiting application.");
+            return;
+        }
+
+        LOGGER.info("Application main menu loaded for user role: " + userRole);
         boolean running = true;
         while (running) {
             try {
                 printMainMenu();
                 int choice = getUserChoice();
                 LOGGER.info("User selected menu option: " + choice);
+
+                if (!isAuthorizedForOption(choice)) {
+                    System.out.println("\nAccess Denied: You do not have permission for this option.");
+                    LOGGER.warning("Unauthorized access attempt to option " + choice + " by " + userRole);
+                    continue;
+                }
+
                 switch (choice) {
                     case 1: loadAndFormTeams(); break;
                     case 2: createSampleData(); break;
@@ -117,6 +132,50 @@ public class TeamMateApplication {
         }
     }
 
+    /**
+     * Verifies user role at application startup
+     */
+    private boolean verifyUserRole() {
+        System.out.println("\n======= USER VERIFICATION =======");
+        System.out.println("Please select your role:");
+        System.out.println("1. Management");
+        System.out.println("2. Participant");
+        System.out.println("3. Exit");
+        System.out.print("Enter your choice (1-3): ");
+
+        int choice = getUserChoice();
+
+        switch (choice) {
+            case 1:
+                userRole = "MANAGEMENT";
+                System.out.println("\nWelcome, Management User!");
+                LOGGER.info("User logged in as MANAGEMENT");
+                return true;
+            case 2:
+                userRole = "PARTICIPANT";
+                System.out.println("\nWelcome, Participant!");
+                LOGGER.info("User logged in as PARTICIPANT");
+                return true;
+            case 3:
+                return false;
+            default:
+                System.out.println("Invalid choice. Please restart the application.");
+                return false;
+        }
+    }
+
+    /**
+     * Checks if user is authorized for a menu option
+     */
+    private boolean isAuthorizedForOption(int option) {
+        if (userRole.equals("MANAGEMENT")) {
+            return true; // Management has access to all options
+        }
+
+        // Participant can only access option 4 (Manual Entry) and 6 (Exit)
+        return option == 4 || option == 6;
+    }
+
     private void printWelcomeBanner() {
         System.out.println("============================================================");
         System.out.println("           TEAMMATE - Team Formation System                 ");
@@ -126,11 +185,27 @@ public class TeamMateApplication {
 
     private void printMainMenu() {
         System.out.println("\n================ MAIN MENU ================");
-        System.out.println("1. Load Participants and Form Teams");
-        System.out.println("2. Create Sample Data File");
-        System.out.println("3. Display Team Statistics");
+        System.out.println("Current Role: " + userRole);
+        System.out.println("-------------------------------------------");
+
+        if (userRole.equals("MANAGEMENT")) {
+            System.out.println("1. Load Participants and Form Teams");
+            System.out.println("2. Create Sample Data File");
+            System.out.println("3. Display Team Statistics");
+        } else {
+            System.out.println("1. [Management Only]");
+            System.out.println("2. [Management Only]");
+            System.out.println("3. [Management Only]");
+        }
+
         System.out.println("4. Manual Participant Entry");
-        System.out.println("5. Form Teams from Manual Entries");
+
+        if (userRole.equals("MANAGEMENT")) {
+            System.out.println("5. Form Teams from Manual Entries");
+        } else {
+            System.out.println("5. [Management Only]");
+        }
+
         System.out.println("6. Exit");
         System.out.println("===========================================");
         System.out.print("Enter your choice: ");
@@ -186,14 +261,14 @@ public class TeamMateApplication {
             } catch (FileProcessingException e) {
                 System.out.println("\nFile Error: " + e.getMessage());
                 LOGGER.severe("File processing error: " + e.getMessage());
-                formationSuccessful = true; // Exit on file errors
+                formationSuccessful = true;
 
             } catch (TeamFormationException e) {
-                System.out.println("\n╔══════════════════════════════════════════════════════════════╗");
+                System.out.println("\n╔═══════════════════════════════════════════════════════════╗");
                 System.out.println("║             TEAM FORMATION ERROR                             ║");
-                System.out.println("╚══════════════════════════════════════════════════════════════╝");
+                System.out.println("╚═══════════════════════════════════════════════════════════╝");
                 System.out.println("\n" + e.getMessage());
-                System.out.println("\n──────────────────────────────────────────────────────────────");
+                System.out.println("\n────────────────────────────────────────────────────────────");
                 LOGGER.severe("Team formation error: " + e.getMessage());
 
                 System.out.print("\nWould you like to:\n");
@@ -203,14 +278,13 @@ public class TeamMateApplication {
 
                 int choice = getUserChoice();
                 if (choice != 1) {
-                    formationSuccessful = true; // Exit the retry loop
+                    formationSuccessful = true;
                 }
-                // If choice is 1, loop continues and asks for new team size
 
             } catch (Exception e) {
                 System.out.println("\nUnexpected error: " + e.getMessage());
                 LOGGER.log(Level.SEVERE, "Unexpected error in loadAndFormTeams", e);
-                formationSuccessful = true; // Exit on unexpected errors
+                formationSuccessful = true;
             }
         }
     }
@@ -298,11 +372,24 @@ public class TeamMateApplication {
         while (entering) {
             System.out.println("\n1. Add New Participant");
             System.out.println("2. View Current Participants");
-            System.out.println("3. Clear All Participants");
+
+            if (userRole.equals("MANAGEMENT")) {
+                System.out.println("3. Clear All Participants");
+            } else {
+                System.out.println("3. [Management Only]");
+            }
+
             System.out.println("4. Return to Main Menu");
             System.out.print("Enter your choice: ");
 
             int choice = getUserChoice();
+
+            // Check authorization for option 3
+            if (choice == 3 && userRole.equals("PARTICIPANT")) {
+                System.out.println("\nAccess Denied: Only Management can clear participants.");
+                continue;
+            }
+
             switch (choice) {
                 case 1: addManualParticipant(); break;
                 case 2: viewManualParticipants(); break;
@@ -470,11 +557,11 @@ public class TeamMateApplication {
                 formationSuccessful = true;
 
             } catch (TeamFormationException e) {
-                System.out.println("\n╔══════════════════════════════════════════════════════════════╗");
+                System.out.println("\n╔═══════════════════════════════════════════════════════════╗");
                 System.out.println("║             TEAM FORMATION ERROR                             ║");
-                System.out.println("╚══════════════════════════════════════════════════════════════╝");
+                System.out.println("╚═══════════════════════════════════════════════════════════╝");
                 System.out.println("\n" + e.getMessage());
-                System.out.println("\n──────────────────────────────────────────────────────────────");
+                System.out.println("\n────────────────────────────────────────────────────────────");
                 LOGGER.severe("Manual team formation error: " + e.getMessage());
 
                 System.out.print("\nWould you like to:\n");
@@ -484,14 +571,13 @@ public class TeamMateApplication {
 
                 int choice = getUserChoice();
                 if (choice != 1) {
-                    formationSuccessful = true; // Exit the retry loop
+                    formationSuccessful = true;
                 }
-                // If choice is 1, loop continues and asks for new team size
 
             } catch (Exception e) {
                 System.out.println("\nUnexpected error: " + e.getMessage());
                 LOGGER.log(Level.SEVERE, "Unexpected error in manual team formation", e);
-                formationSuccessful = true; // Exit on unexpected errors
+                formationSuccessful = true;
             }
         }
     }
@@ -627,7 +713,6 @@ public class TeamMateApplication {
         }
         return String.valueOf(value);
     }
-
     private void cleanup() {
         if (scanner != null) scanner.close();
         LOGGER.info("Application shutdown complete");
