@@ -344,6 +344,8 @@ public class TeamMateApplication {
             LOGGER.severe("Error creating sample data: " + e.getMessage());
         }
     }
+    /** Reads a formed-teams CSV file and displays detailed team statistics.
+     *  Handles missing files, parsing errors, and logs statistic results. */
 
     private void displayStatistics() {
         System.out.println("\n======= TEAM STATISTICS =======");
@@ -369,6 +371,8 @@ public class TeamMateApplication {
             LOGGER.severe("Error displaying statistics: " + e.getMessage());
         }
     }
+    /** Handles the manual participant entry menu, allowing adding, viewing, and clearing entries.
+     *  Enforces role-based access for management actions and loops until the user returns. */
 
     private void manualParticipantEntry() {
         System.out.println("\n======= MANUAL PARTICIPANT ENTRY =======");
@@ -525,6 +529,8 @@ public class TeamMateApplication {
         System.out.println("Total: " + manualParticipants.size());
         LOGGER.info("Displayed " + manualParticipants.size() + " manual participants");
     }
+    /** Forms balanced teams using participants added manually during the session.
+     *  Validates team size, displays results, handles errors, and allows CSV saving. */
 
     private void formTeamsFromManualEntry() {
         System.out.println("\n======= FORM TEAMS FROM MANUAL ENTRIES =======");
@@ -713,6 +719,8 @@ public class TeamMateApplication {
                 teams.stream().mapToDouble(Team::calculateBalanceScore).average().orElse(0), 2));
         System.out.println("============================================================");
     }
+    /** Formats a double value to the specified number of decimal places (1 or 2).
+     *  Falls back to the raw value if an unsupported precision is requested. */
 
     private String formatDouble(double value, int decimals) {
         if (decimals == 1) {
@@ -722,6 +730,8 @@ public class TeamMateApplication {
         }
         return String.valueOf(value);
     }
+    /** Closes application resources such as the input scanner.
+     *  Logs shutdown completion for tracking and debugging. */
     private void cleanup() {
         if (scanner != null) scanner.close();
         LOGGER.info("Application shutdown complete");
