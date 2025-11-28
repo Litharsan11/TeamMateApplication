@@ -87,6 +87,9 @@ public class TeamMateApplication {
         }
     }
 
+    /** Runs the main application loop, handling user role checks and menu operations.
+     *  Manages authorized actions, logs activity, and exits when requested. */
+
     public void run() {
         printWelcomeBanner();
 
@@ -210,6 +213,8 @@ public class TeamMateApplication {
         System.out.println("===========================================");
         System.out.print("Enter your choice: ");
     }
+    /** Reads user input and converts it to an integer.
+     *  Returns -1 if the input is invalid or not a number. */
 
     private int getUserChoice() {
         try {
@@ -218,6 +223,8 @@ public class TeamMateApplication {
             return -1;
         }
     }
+    /** Loads participant data automatically and forms balanced teams with error handling.
+     *  Handles team size validation, CSV saving, and user decisions during failures. */
 
     private void loadAndFormTeams() {
         System.out.println("\n======= TEAM FORMATION =======");
@@ -406,6 +413,8 @@ public class TeamMateApplication {
             }
         }
     }
+    /** Collects and validates user-entered participant details, including survey and skill data.
+     *  Creates the participant object, logs it, and optionally saves it to CSV. */
 
     private void addManualParticipant() {
         System.out.println("\n--- Add New Participant ---");
