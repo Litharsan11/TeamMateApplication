@@ -182,3 +182,155 @@ Nov 27, 2025 3:49:33 PM com.teammate.TeamMateApplication run
 INFO: User exited application
 Nov 27, 2025 3:49:33 PM com.teammate.TeamMateApplication cleanup
 INFO: Application shutdown complete
+Nov 27, 2025 4:13:32 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 27, 2025 4:13:32 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 27, 2025 4:13:39 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 27, 2025 4:13:39 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 27, 2025 4:13:39 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 107 participants from allParticipants.csv
+Nov 27, 2025 4:13:39 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 107 participants
+Nov 27, 2025 4:13:43 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 5
+Nov 27, 2025 4:13:43 PM com.teammate.TeamMateApplication loadAndFormTeams
+SEVERE: Team formation error: Cannot form balanced teams: 107 participants cannot be evenly divided by team size 5.
+This would leave 2 participant(s) unassigned.
+Please choose a team size that divides evenly (e.g., 107)
+Nov 27, 2025 4:14:04 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 107 participants from allParticipants.csv
+Nov 27, 2025 4:14:04 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 107 participants
+Nov 27, 2025 4:14:07 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 3
+Nov 27, 2025 4:14:07 PM com.teammate.TeamMateApplication loadAndFormTeams
+SEVERE: Team formation error: Cannot form balanced teams: 107 participants cannot be evenly divided by team size 3.
+This would leave 2 participant(s) unassigned.
+Please choose a team size that divides evenly (e.g., 107)
+Nov 27, 2025 4:14:18 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 4
+Nov 27, 2025 4:14:18 PM com.teammate.TeamMateApplication manualParticipantEntry
+INFO: Manual participant entry mode - Current count: 0
+Nov 27, 2025 4:14:21 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: Adding new manual participant
+Nov 27, 2025 4:14:21 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 107 participants from allParticipants.csv
+Nov 27, 2025 4:14:44 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: New participant created: P1003 - ffew (Type: Thinker, Score: 68)
+Nov 27, 2025 4:14:49 PM com.teammate.util.CSVFileHandler appendParticipantToAll
+INFO: Participant P1003 added to allParticipants.csv
+Nov 27, 2025 4:14:49 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: Participant P1003 saved to allParticipants.csv
+Nov 27, 2025 4:14:52 PM com.teammate.TeamMateApplication viewManualParticipants
+INFO: Displayed 1 manual participants
+Nov 27, 2025 4:14:58 PM com.teammate.TeamMateApplication manualParticipantEntry
+INFO: Exiting manual participant entry mode
+Nov 27, 2025 4:15:01 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 27, 2025 4:15:01 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 27, 2025 4:15:01 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 107 participants from allParticipants.csv
+Nov 27, 2025 4:15:01 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 107 participants
+Nov 27, 2025 4:15:10 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 107
+Nov 27, 2025 4:15:10 PM com.teammate.TeamMateApplication loadAndFormTeams
+SEVERE: Team formation error: Team TEAM-1 has 36 leaders. Maximum allowed is 2.
+Unable to form balanced teams with current participants. Please try a different team size.
+Nov 27, 2025 4:15:19 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 107 participants from allParticipants.csv
+Nov 27, 2025 4:15:19 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 107 participants
+Nov 27, 2025 4:15:26 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 27, 2025 4:15:26 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded
+Nov 27, 2025 4:15:27 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 27, 2025 4:15:27 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 27, 2025 4:15:27 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 108 participants from allParticipants.csv
+Nov 27, 2025 4:15:27 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 108 participants
+Nov 27, 2025 4:15:31 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 4
+Nov 27, 2025 4:15:31 PM com.teammate.TeamMateApplication loadAndFormTeams
+SEVERE: Team formation error: Team TEAM-26 has 4 leaders. Maximum allowed is 2.
+Unable to form balanced teams with current participants. Please try a different team size.
+Nov 27, 2025 4:15:42 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 108 participants from allParticipants.csv
+Nov 27, 2025 4:15:42 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 108 participants
+Nov 27, 2025 4:15:44 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 3
+Nov 27, 2025 4:15:44 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Teams formed: 36 teams in 12ms
+Nov 27, 2025 4:15:51 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Teams saved to formed_teams.csv
+Nov 28, 2025 4:06:45 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 28, 2025 4:06:53 PM com.teammate.TeamMateApplication verifyUserRole
+INFO: User logged in as MANAGEMENT
+Nov 28, 2025 4:06:53 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded for user role: MANAGEMENT
+Nov 28, 2025 4:06:59 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Nov 28, 2025 4:06:59 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Nov 28, 2025 4:06:59 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 108 participants from allParticipants.csv
+Nov 28, 2025 4:06:59 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 108 participants
+Nov 28, 2025 4:07:06 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 3
+Nov 28, 2025 4:07:06 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Teams formed: 36 teams in 97ms
+Nov 28, 2025 4:07:11 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Teams saved to formed_teams.csv
+Nov 28, 2025 4:07:25 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 3
+Nov 28, 2025 4:07:25 PM com.teammate.TeamMateApplication displayStatistics
+INFO: Displaying team statistics
+Nov 28, 2025 4:07:28 PM com.teammate.TeamMateApplication displayStatistics
+INFO: Statistics displayed for 36 teams
+Nov 28, 2025 4:07:37 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 4
+Nov 28, 2025 4:07:37 PM com.teammate.TeamMateApplication manualParticipantEntry
+INFO: Manual participant entry mode - Current count: 0
+Nov 28, 2025 4:07:40 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: Adding new manual participant
+Nov 28, 2025 4:07:40 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 108 participants from allParticipants.csv
+Nov 28, 2025 4:08:20 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: New participant created: P1004 - gregre (Type: Balanced, Score: 80)
+Nov 28, 2025 4:08:25 PM com.teammate.util.CSVFileHandler appendParticipantToAll
+INFO: Participant P1004 added to allParticipants.csv
+Nov 28, 2025 4:08:25 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: Participant P1004 saved to allParticipants.csv
+Nov 28, 2025 4:08:28 PM com.teammate.TeamMateApplication viewManualParticipants
+INFO: Displayed 1 manual participants
+Nov 28, 2025 4:08:33 PM com.teammate.TeamMateApplication manualParticipantEntry
+INFO: Exiting manual participant entry mode
+Nov 28, 2025 4:08:39 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 6
+Nov 28, 2025 4:08:39 PM com.teammate.TeamMateApplication run
+INFO: User exited application
+Nov 28, 2025 4:08:39 PM com.teammate.TeamMateApplication cleanup
+INFO: Application shutdown complete
+Nov 28, 2025 4:08:49 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Nov 28, 2025 4:08:50 PM com.teammate.TeamMateApplication verifyUserRole
+INFO: User logged in as PARTICIPANT
+Nov 28, 2025 4:08:50 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded for user role: PARTICIPANT
+Nov 28, 2025 4:11:42 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 6
+Nov 28, 2025 4:11:42 PM com.teammate.TeamMateApplication run
+INFO: User exited application
+Nov 28, 2025 4:11:42 PM com.teammate.TeamMateApplication cleanup
+INFO: Application shutdown complete
