@@ -516,3 +516,65 @@ Nov 28, 2025 5:26:33 PM com.teammate.util.CSVFileHandler appendParticipantToAll
 INFO: Participant P1004 added to allParticipants.csv
 Nov 28, 2025 5:26:33 PM com.teammate.TeamMateApplication addManualParticipant
 INFO: Participant P1004 saved to allParticipants.csv
+Nov 28, 2025 5:30:08 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Dec 02, 2025 8:51:27 PM com.teammate.TeamMateApplication configureLogging
+INFO: TeamMate Application started - Logging to src/main/resources/teammate_application.log
+Dec 02, 2025 8:51:33 PM com.teammate.TeamMateApplication verifyUserRole
+INFO: User logged in as MANAGEMENT
+Dec 02, 2025 8:51:33 PM com.teammate.TeamMateApplication run
+INFO: Application main menu loaded for user role: MANAGEMENT
+Dec 02, 2025 8:51:42 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 1
+Dec 02, 2025 8:51:42 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Starting team formation process
+Dec 02, 2025 8:51:43 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 110 participants from allParticipants.csv
+Dec 02, 2025 8:51:43 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Loaded 110 participants
+Dec 02, 2025 8:51:58 PM com.teammate.TeamMateApplication loadAndFormTeams
+INFO: Team size selected: 4
+Dec 02, 2025 8:51:58 PM com.teammate.TeamMateApplication loadAndFormTeams
+SEVERE: Team formation error: Cannot form balanced teams: 110 participants cannot be evenly divided by team size 4.
+This would leave 2 participant(s) unassigned.
+Please choose a team size that divides evenly (e.g., 5, 10, 11, 22, 55, 110)
+Dec 02, 2025 8:52:24 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 2
+Dec 02, 2025 8:52:24 PM com.teammate.TeamMateApplication createSampleData
+INFO: Creating sample data file
+Dec 02, 2025 8:52:24 PM com.teammate.TeamMateApplication createSampleData
+INFO: Sample data file created successfully
+Dec 02, 2025 8:52:29 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 3
+Dec 02, 2025 8:52:29 PM com.teammate.TeamMateApplication displayStatistics
+INFO: Displaying team statistics
+Dec 02, 2025 8:52:32 PM com.teammate.TeamMateApplication displayStatistics
+INFO: Statistics displayed for 36 teams
+Dec 02, 2025 8:52:39 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 4
+Dec 02, 2025 8:52:39 PM com.teammate.TeamMateApplication manualParticipantEntry
+INFO: Manual participant entry mode - Current count: 0
+Dec 02, 2025 8:52:42 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: Adding new manual participant
+Dec 02, 2025 8:52:42 PM com.teammate.util.CSVFileHandler loadParticipantsAutomatically
+INFO: Loaded 110 participants from allParticipants.csv
+Dec 02, 2025 8:53:13 PM com.teammate.TeamMateApplication addManualParticipant
+INFO: New participant created: P1004 - sdwe (Type: Thinker, Score: 64)
+Dec 02, 2025 8:53:19 PM com.teammate.TeamMateApplication viewManualParticipants
+INFO: Displayed 1 manual participants
+Dec 02, 2025 8:53:28 PM com.teammate.TeamMateApplication manualParticipantEntry
+INFO: Exiting manual participant entry mode
+Dec 02, 2025 8:53:36 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 5
+Dec 02, 2025 8:53:36 PM com.teammate.TeamMateApplication formTeamsFromManualEntry
+INFO: Forming teams from manual entries
+Dec 02, 2025 8:53:39 PM com.teammate.TeamMateApplication getValidatedTeamSize
+WARNING: Invalid team size, using default: 5
+Dec 02, 2025 8:53:39 PM com.teammate.TeamMateApplication formTeamsFromManualEntry
+SEVERE: Manual team formation error: Invalid team size: 5. Must be between 3 and 1 (total participants)
+Dec 02, 2025 8:53:45 PM com.teammate.TeamMateApplication run
+INFO: User selected menu option: 6
+Dec 02, 2025 8:53:45 PM com.teammate.TeamMateApplication run
+INFO: User exited application
+Dec 02, 2025 8:53:45 PM com.teammate.TeamMateApplication cleanup
+INFO: Application shutdown complete

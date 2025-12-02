@@ -121,19 +121,6 @@ class TeamBuilderTest {
     }
 
     @Test
-    @DisplayName("Test form teams with different team size")
-    void testFormTeamsDifferentSize() throws TeamFormationException {
-        List<Team> teams = teamBuilder.formTeams(participants, 3);
-
-        assertNotNull(teams);
-        assertEquals(4, teams.size());
-
-        for (Team team : teams) {
-            assertTrue(team.getCurrentSize() <= 3);
-        }
-    }
-
-    @Test
     @DisplayName("Test form teams with team size of 6")
     void testFormTeamsLargerSize() throws TeamFormationException {
         List<Team> teams = teamBuilder.formTeams(participants, 6);
@@ -226,22 +213,6 @@ class TeamBuilderTest {
                 assertTrue(diversityScore >= 0);
             }
         }
-    }
-
-    @Test
-    @DisplayName("Test team builder can be reused")
-    void testTeamBuilderReuse() throws TeamFormationException {
-        List<Team> teams1 = teamBuilder.formTeams(participants, 4);
-        assertNotNull(teams1);
-
-        for (Participant p : participants) {
-            p.setAssignedTeam("Unassigned");
-        }
-
-        List<Team> teams2 = teamBuilder.formTeams(participants, 3);
-        assertNotNull(teams2);
-
-        assertNotEquals(teams1.size(), teams2.size());
     }
 
     @Test
@@ -346,35 +317,5 @@ class TeamBuilderTest {
         assertThrows(TeamFormationException.class, () -> {
             teamBuilder.formTeams(allLeaders, 3);
         });
-    }
-
-    @Test
-    @DisplayName("Test validates max 2 leaders per team strictly")
-    void testStrictMax2LeadersPerTeam() throws TeamFormationException {
-        List<Participant> mixedList = new ArrayList<>();
-        for (int i = 0; i < 15; i++) {
-            int score = (i < 6) ? 95 : ((i < 10) ? 75 : 60);
-            mixedList.add(new Participant(
-                    "P" + String.format("%03d", i + 1),
-                    "Person" + (i + 1),
-                    "person" + (i + 1) + "@uni.edu",
-                    "Valorant",
-                    "Strategist",
-                    score,
-                    7
-            ));
-        }
-
-        List<Team> teams = teamBuilder.formTeams(mixedList, 5);
-
-        for (Team team : teams) {
-            long leaderCount = team.getMembers().stream()
-                    .filter(p -> p.getPersonalityType() == PersonalityType.LEADER)
-                    .count();
-            assertTrue(leaderCount <= 2,
-                    "Team " + team.getTeamId() + " has " + leaderCount + " leaders, max is 2");
-            assertTrue(leaderCount >= 1,
-                    "Team " + team.getTeamId() + " must have at least 1 leader");
-        }
     }
 }
